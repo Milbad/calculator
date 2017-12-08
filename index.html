@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poiret+One" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>JS Calculator</header>
+  <div id="calculator" class="center-block container-fluid">
+    <p id="title" class="text-center"> ELECTRONIC CALCULATOR</p>
+    <div id="screen" class="center-block text-right">
+      <div>
+        <p id="entered"></p>
+      </div>
+      <div>
+        <p id="operation"></p>
+      </div>
+    </div>
+    <div class="keys">
+      <div class="row">
+        <button id="all-clear" class="btn col-xs-3">AC</button>
+        <button id="clear-last" class="btn col-xs-3">CE</button>
+        <button id="divid" value='/' class="op btn col-xs-3">%</button>
+        <button id="mult" value="x" class="op btn col-xs-3">x</button>
+      </div>
+      <div class="row">
+        <button id="seven" value=7 class="btn num col-xs-3">7</button>
+        <button id="eight" value=8 class="btn num col-xs-3">8</button>
+        <button id="nine" value=9 class="btn num col-xs-3">9</button>
+        <button id="minus" value="-" class="op btn col-xs-3">-</button>
+      </div>
+      <div class="row">
+        <button id="four" value=4 class="btn num col-xs-3">4</button>
+        <button id="five" value=5 class="btn num col-xs-3">5</button>
+        <button id="six" value=6 class="btn num col-xs-3">6</button>
+        <button id="plus" value="+" class="op btn col-xs-3">+</button>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="row">
+            <button id="one" value=1 class="btn num col-xs-6">1</button>
+            <button id="two" value=2 class="btn num col-xs-6">2</button>
+          </div>
+          <div class="row">
+            <button value=0 class="btn num zero">0</button>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="row">
+            <button id="three" value=3 class="num btn col-xs-12">3</button>
+          </div>
+          <div class="row">
+            <button class="btn num col-xs-12" value=".">.</button>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="row">
+            <button id="egal" value="=" class="op btn egal col-xs-12">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
